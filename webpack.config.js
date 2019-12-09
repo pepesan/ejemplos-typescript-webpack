@@ -1,8 +1,6 @@
 const path = require('path');
 
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const UglifyJsPlugin = require("uglifyjs-3-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const basePath = __dirname;
 const distPath = 'dist';
@@ -21,8 +19,6 @@ const webpackInitConfig = {
   output: {
     path: path.resolve(basePath, distPath),
     filename: '[name].js',
-    libraryTarget: 'umd',
-    library: 'MyLib',
     umdNamedDefine: true
   },
   module: {
@@ -42,10 +38,6 @@ const webpackInitConfig = {
     new HTMLWebpackPlugin({
       filename: indexOutput,
       template: indexInput,
-    }),
-    new UglifyJsPlugin({
-      sourceMap: true,
-      include: /\.min\.js$/,
     })
   ]
 };
