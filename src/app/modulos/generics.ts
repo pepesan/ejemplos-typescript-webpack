@@ -83,4 +83,7 @@ export function genericos() {
     let kvp1 = new KeyValuePair<number, string>();
     kvp1.setKeyValue(1, "Steve");
     kvp1.display(); //Output: Key = 1, Val = Steve
+    let kvp2 = new KeyValuePair<string, string>();
+    kvp2.setKeyValue("Cliente", "Steve");
+    kvp2.display(); //Output: Key = Cliente, Val = Steve
 }

@@ -209,4 +209,6 @@ export function clases() {
     }
     Circle.pi; // returns 3.14
     Circle.calculateArea(5); // returns 78.5
+    // Solo lectura readonly
+    Math.PI;
 }

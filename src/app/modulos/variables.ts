@@ -8,7 +8,7 @@ export function variables(){
     mutable += 1;
     console.log("Mutable: " + mutable);
 
-    let ciudades:string[]= ["cuenca", "salamanca"];
+    let ciudades: string[] = ["cuenca", "salamanca"];
 
     console.log("Ciudad [0]: " + ciudades[0]);
 
@@ -19,14 +19,16 @@ export function variables(){
 
     console.log("color: "+ color);
 
-    var variable:any;
+    var variable:any = 11;
     let listado:any[] = [1, "hola"];
-    console.log("Lsitado [1]: "+ listado[1]);
+    console.log("Listado [1]: "+ listado[1]);
 
     function hazAlgo(): void{
         console.log("Algo");
     }
-    hazAlgo();
+    let ret=hazAlgo();
+    // no tiene puto sentido
+    console.log(ret)
 }
 
 

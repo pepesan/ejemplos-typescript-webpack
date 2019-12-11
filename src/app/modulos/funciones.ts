@@ -28,7 +28,7 @@ export function funciones() {
     function Greet3(greeting: string, ...names: string[]) {
         return greeting + " " + names.join(", ") + "!";
     }
-
+    Greet3("Hello", "Steve", "Bill", "Pepe"); // returns "Hello Steve, Bill, Pepe!"
     Greet3("Hello", "Steve", "Bill"); // returns "Hello Steve, Bill!"
 
     Greet3("Hello");// returns "Hello !"
